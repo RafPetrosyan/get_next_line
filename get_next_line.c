@@ -14,16 +14,25 @@
 
 char *get_next_line(int fd)
 {
-	char	buffer[BUFFER_SIZE];
-	char	*temp;
-	char	*ret;
-	int		read_size;
+	static char	buffer[BUFFER_SIZE];
+	char		*temp;
+	char		*ret;
+	int			read_size;
+	int			full_size;
 
+	full_size = 1;
 	temp[0] = '\0';
 	read_size = read(fd, buffer, BUFFER_SIZE);
+	if (read_size <= 0)
+		return (0);
 	while (read_size > 0)
 	{
-		temp = ft_strjoin(temp, buffer, );
-		ret = temp;
+		if (ft_check(buffer))
+			
+		ret = ft_strjoin(temp, buffer, read_size);
+		if (full_size > 2 * read_size)
+			free(temp);
+		temp = ret;
 	}
+	return (0);
 }
