@@ -6,12 +6,12 @@
 /*   By: rafpetro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 16:42:14 by rafpetro          #+#    #+#             */
-/*   Updated: 2024/03/04 16:54:06 by rafpetro         ###   ########.fr       */
+/*   Updated: 2024/03/04 18:22:35 by rafpetro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
@@ -19,6 +19,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 
 char	*get_next_line(int fd);
 int		ft_check(char *str);

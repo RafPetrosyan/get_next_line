@@ -6,11 +6,11 @@
 /*   By: rafpetro <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 18:11:31 by rafpetro          #+#    #+#             */
-/*   Updated: 2024/03/04 16:52:56 by rafpetro         ###   ########.fr       */
+/*   Updated: 2024/03/04 17:04:59 by rafpetro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(char *str)
 {
